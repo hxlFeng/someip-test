@@ -76,7 +76,7 @@ class WholePackage(Packet):
             TYPE_RESPONSE_ACK: 'RESPONSE_ACK',  # 0xc0
             TYPE_ERROR_ACK: 'ERROR_ACK',  # 0xc1
         }),
-        ByteEnumField('retcode', 0, {  # -- Return code --
+        ByteEnumField('retcode', RET_E_OK, {  # -- Return code --
             RET_E_OK: 'E_OK',  # 0x00
             RET_E_NOT_OK: 'E_NOT_OK',  # 0x01
             RET_E_UNKNOWN_SERVICE: 'E_UNKNOWN_SERVICE',  # 0x02
